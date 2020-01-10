@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kodchasan|Nunito|Stylish&display=swap');
-
+/* color scheme: https://coolors.co/app/102847-c7f1f2-0e838e-8c9aac-faffff */
 #top {
     text-align: center;
     
+}
+body {
+    background-color: #C7F1F2;
 }
