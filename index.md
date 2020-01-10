@@ -7,29 +7,31 @@
     <meta name="author" content="Christian G. K. Moreira">
     <title>CIT 230 - W1 assignment</title>
     <link rel="stylesheet" href="/style.css"> 
-    <script type="text/javascript">
-        onload = function(){
-            document.getElementById("lastModified").innerHTML = "Last Updated " + document.lastModified;
-        }
-    </script>
+    
   </head>
   <body>
     <div id="top">
       <h1>Christian G. K. Moreira</h1>
     </div>
     <h2>CIT 230 - Assignment portal</h2>
+    <img href="#">
     <ul>
       <li><a href="#">Lesson 01</a></li>
       <li><a href="#">Lesson 02</a></li>
       <li><a href="#">Lesson 03</a></li>
       <li><a href="#">Lesson 04</a></li>
       <li><a href="#">Lesson 05</a></li>
-    </ul>
-    <footer align="center">
+    </ul>   
+  </body>
+  <footer align="center">
+    <script type="text/javascript">
+        onload = function(){
+            document.getElementById("lastModified").innerHTML = "Last Updated " + document.lastModified;
+        }
+    </script>
         <p>&copy; 2020 | Christian Moreira | 
             <a href="">MDN Documentation Site | BYU-Idaho</a>
         </p>
         <span id="lastModified"></span>
   </footer>
-  </body>
 </html>
