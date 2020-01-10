@@ -6,6 +6,7 @@
     <meta name="description" content="This website was built to meet the requirements of CIT 230 - W1 assignment">
     <meta name="author" content="Christian G. K. Moreira">
     <title>CIT 230 - W1 assignment</title>
+    <link rel="stylesheet" href="/style.css"> 
     <script type="text/javascript">
         onload = function(){
             document.getElementById("lastModified").innerHTML = "Last Updated " + document.lastModified;
@@ -13,7 +14,9 @@
     </script>
   </head>
   <body>
-    <h1>Christian G. K. Moreira</h1>
+    <div id="top">
+      <h1>Christian G. K. Moreira</h1>
+    </div>
     <h2>CIT 230 - Assignment portal</h2>
     <ul>
       <li><a href="#">Lesson 01</a></li>
