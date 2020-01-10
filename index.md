@@ -6,8 +6,7 @@
     <meta name="description" content="This website was built to meet the requirements of CIT 230 - W1 assignment">
     <meta name="author" content="Christian G. K. Moreira">
     <title>CIT 230 - W1 assignment</title>
-    <link rel="stylesheet" href="/style.css"> 
-    
+    <link rel="stylesheet" href="/style.css">   
   </head>
   <body>
     <div id="top">
@@ -24,11 +23,6 @@
     </ul>   
   </body>
   <footer align="center">
-    <script>
-        onload = function(){
-            document.getElementById("lastModified").innerHTML = "Last Updated " + document.lastModified;
-        }
-    </script>
         <p>&copy; 2020 | Christian Moreira | 
             <a href="">MDN Documentation Site | BYU-Idaho</a>
         </p>
