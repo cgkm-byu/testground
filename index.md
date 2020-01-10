@@ -24,7 +24,7 @@
     </ul>   
   </body>
   <footer align="center">
-    <script type="text/javascript">
+    <script>
         onload = function(){
             document.getElementById("lastModified").innerHTML = "Last Updated " + document.lastModified;
         }
