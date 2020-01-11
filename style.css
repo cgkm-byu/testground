@@ -4,18 +4,17 @@
     text-align: center;
     grid-row: 1/2;
     grid-column: 1/4;
-    background-color: #102847;
 }
 
 #assignment-list{
     grid-row: 2/3;
     grid-column: 1/4;
+    text-align: left;
     background-color: #FAFFFF;
 }
 #photo {
     grid-row: 2/3;
-    grid-column: 3/4;
-    padding-right: 10px;     
+    grid-column: 3/4;      
 }
 body {
     display: grid;
