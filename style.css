@@ -25,6 +25,6 @@ footer{
     grid-column: 1/4;
     text-align: center;
 }
-a{
-    color: #FED766;
+footer a{
+    color: darkblue;
 }
