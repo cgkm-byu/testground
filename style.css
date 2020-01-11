@@ -2,7 +2,11 @@
 /* color scheme: https://coolors.co/app/102847-c7f1f2-0e838e-8c9aac-faffff */
 #top {
     text-align: center;
+    background-color: #102847;
+}
+#assignment-list{
     
+    background-color: #FAFFFF;
 }
 body {
     background-color: #C7F1F2;
