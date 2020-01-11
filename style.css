@@ -5,7 +5,8 @@
     background-color: #102847;
 }
 #photo {
-    float: right;   
+    float: right;
+    padding-right: 10%;   
 }
 #assignment-list{
 
