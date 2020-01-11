@@ -2,12 +2,12 @@
 /* color scheme: https://coolors.co/app/102847-c7f1f2-0e838e-8c9aac-faffff */
 #top {
     text-align: center;
-    min-height: 3em;
+    min-height: 5em;
     background-color: #102847;
 }
 #photo {
     float: right;
-    padding-right: 15%;   
+    padding-right: 10%;   
 }
 #assignment-list{
 
