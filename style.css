@@ -15,7 +15,7 @@
 #photo {
     grid-row: 2/3;
     grid-column: 3/4;
-    padding-right: 20px;     
+    padding-right: 10px;     
 }
 body {
     display: grid;
