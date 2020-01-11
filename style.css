@@ -9,7 +9,6 @@
 #assignment-list{
     grid-row: 2/3;
     grid-column: 1/4;
-    text-align: left;
     background-color: #FAFFFF;
 }
 #photo {
