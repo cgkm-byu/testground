@@ -4,10 +4,16 @@
     text-align: center;
     background-color: #102847;
 }
+#photo {
+    float: right;   
+}
 #assignment-list{
 
     background-color: #FAFFFF;
 }
 body {
     background-color: #8C9AAC;
+}
+footer{
+    align-self: center;
 }
