@@ -1,0 +1,27 @@
+/* General Rules that apply to all devices */
+html *{
+    box-sizing: border-box;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px; /*1em or 1 rem*/
+}
+
+/* Mobile Rules */
+#wrapper {
+    width: 100%;
+    background-color: #FAFFFF;
+}
+
+/* Larger Screen Rules */
+@media screen and (min-width:680px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: #8C9AAC;
+        font-size: 4vw;
+    }
+}
