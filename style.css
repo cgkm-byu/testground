@@ -1,14 +1,63 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 /* normalize.css */
-@import url('https://fonts.googleapis.com/css?family=Kodchasan|Nunito|Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
 /* color scheme: https://coolors.co/app/102847-c7f1f2-0e838e-8c9aac-faffff */
+/* General Rules that apply to all devices */
+html *{
+    box-sizing: border-box;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #8C9AAC;
+    font-size: 18px;
+}
+main{
+    grid-column: 1/4;
+}
+/* Mobile Rules */
+#wrapper { /* wrapper is a div inside main*/
+    width: 100%;
+    background-color: #FAFFFF;
+    grid-column: 1/4;
+}
 
+/* Larger Screen Rules */
+@media screen and (min-width:680px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1300px;
+        background-color: #8C9AAC;
+        font-size: 2vw;
+        grid-column: 1/4;
+    }
+    #navlist{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
 #top {
     text-align: center;
     grid-row: 1/2;
     grid-column: 1/4;
 }
-
+li{
+    list-style: none;
+}
+.ss{
+    width: 300px;
+}
+.ss img{
+    max-height: 100%;
+    max-width: 100%; 
+}
 #assignment-list{
     grid-row: 2/3;
     grid-column: 1/4;
@@ -18,11 +67,6 @@
     grid-row: 2/3;
     grid-column: 3/4;      
 }
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #8C9AAC;
-}
 footer{
     grid-row: 3/4;
     grid-column: 1/4;
@@ -30,4 +74,7 @@ footer{
 }
 footer a{
     color: darkblue;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ibarra Real Nova', serif;
 }
