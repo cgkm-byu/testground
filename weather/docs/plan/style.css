@@ -1,0 +1,77 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+/* normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+/* color scheme: https://coolors.co/app/102847-c7f1f2-0e838e-8c9aac-faffff */
+/* General Rules that apply to all devices */
+html *{
+    box-sizing: border-box;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body {
+    display: flexbox;
+    background-color: #8C9AAC;
+    font-size: 18px;
+}
+/* Mobile Rules */
+#wrapper { /* wrapper is a div inside main*/
+    width: 100%;
+    background-color: #FAFFFF;
+    grid-column: 1/4;
+    
+}
+
+/* Larger Screen Rules */
+@media screen and (min-width:680px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #8C9AAC;
+        font-size: 2vw;
+        grid-column: 1/4;
+        
+    }
+    #navlist{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+/* Extra-Large Screen Rules */
+@media screen and (min-width:1300px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #8C9AAC;
+        font-size: 1vw;
+        grid-column: 1/4;
+        
+    }  
+    #navlist{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+
+li{
+    list-style: none;
+}
+footer{
+    text-align: center;
+}
+
+
+footer a{
+    color: darkblue;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: initial;
+}
