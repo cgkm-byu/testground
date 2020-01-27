@@ -31,7 +31,7 @@ html *{
 }
 body {
     display: flexbox;
-    background-color: #8C9AAC;
+    background-color: white;
     font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +59,7 @@ p {
     text-align: center;
 }
 .colors th {
-    background-color: #999;
+    background-color: #8C9AAC;
 }
 .colors td{
     width: 25%;
