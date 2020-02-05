@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: #000;
+    background-color: #000;
 }
 nav {
 	list-style: none;
