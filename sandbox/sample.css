@@ -1,0 +1,37 @@
+/* Change box model  */
+html {
+ box-sizing: border-box;
+}
+
+*, *::before, *::after{
+ box-sizing: inherit;
+}
+
+/* General Styles */
+body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 18px; 
+}
+#wrapper{
+    padding: 2vw;
+}
+
+/* Mobile First Styles */
+#pageHeader{
+    font-size: 3vW;
+}
+ul{
+    display:flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-evenly;
+}
+ul li{
+    border: #0000ff solid 1px;
+}
+
+/* Larger Screen Styles  */
+@media screen and (min-width: 60em){
+    display: flex;
+    
+}
