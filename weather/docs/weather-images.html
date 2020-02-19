@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This website was built to meet the requirements of CIT 230 - W6 assignment">
+    <meta name="author" content="Christian G. K. Moreira">
+    <title>Weather Images</title>
+    <script src="../js/scripts.js"></script>
+ <link rel="stylesheet" href="../css/weatherImgs.css">
+</head>
+<body>
+  <header id="pageHeader">
+    <h1>Weather Images</h1>
+  </header>
+  
+  <main>
+   <picture>
+        <source media="(min-width: 680px)" srcset="../images/clear.jpg">
+        <img src="../images/clear-small.jpg" alt="Flowers" style="width:auto;">
+   </picture>
+   <picture>
+    <source media="(min-width: 680px)" srcset="../images/clouds.jpg">
+    <img src="../images/clouds-small.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <picture>
+        <source media="(min-width: 680px)" srcset="../images/rain.jpg">
+        <img src="../images/rain-small.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <picture>
+        <source media="(min-width: 680px)" srcset="../images/fog.jpg">
+        <img src="../images/fog-small.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+    <picture>
+        <source media="(min-width: 680px)" srcset="../images/snow.jpg">
+        <img src="../images/snow-small.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+  </main>
+  
+  <footer id="pageFooter">
+   &copy; 2020, The Weather Site
+   <span id="lastModified"></span>
+  </footer>
+</body>
+</html>
