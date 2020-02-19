@@ -1,0 +1,18 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
+
+#pageHeader{
+    Display:block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 680px) {
+	picture{
+        display: block;
+    }
+}
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
