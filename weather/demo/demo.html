@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demo 2</title>
     <link rel="stylesheet" href="demo.css">
+    <script src="demo.js"></script>
 </head>
 <body>
-    <h1>Demo 2</h1>
-    <div class="component">
-        <div class="inner">
-        </div>
+    <h1>Caesar Cypher</h1>
+    <div class="userText">
+        <p>Input your text bellow:</p>
+        <input type="text" id="uText"><br>
+        <p>Input the number of characters to shift bellow:</p>
+        <input type="number" id="cShift"><br><br>
+        <button onclick="caesarCypher()">Cypher!</button>
+        <p>Your cypher will show here once you click on the button:</p>
+        <span id="result"></span><br><br>
+        
     </div>
 </body>
 </html>
