@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     menuButton.addEventListener("click", mobileMenu);
 
     // Get weather json data
-    let weatherURL = "/cgkm-byui.github.io/weather/js/idahoweather.json";
+    let weatherURL = "/weather/js/idahoweather.json";
     fetchWeatherData(weatherURL);
 
 })
@@ -112,7 +112,7 @@ menuButton.addEventListener('click',function(event){
 }) */
 
 function mobileMenu(event) {
-    const navList = document.querySelector('#navList');
+    const navList = document.querySelector('#menu');
     navList.classList.toggle("mobileNav");
 }
 

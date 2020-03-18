@@ -16,42 +16,39 @@
 }
 
 .clear {
-    background-image: url("/cgkm-byui.github.io/weather/images/clear-small.jpg");
+    background-image: url("/weather/images/clear-small.jpg");
 }
 
 .clouds {
-    background-image: url("/cgkm-byui.github.io/weather/images/clouds-small.jpg");
+    background-image: url("/weather/images/clouds-small.jpg");
 }
 
 .fog {
-    background-image: url("/cgkm-byui.github.io/weather/images/fog-small.jpg");
+    background-image: url("/weather/images/fog-small.jpg");
 }
 
 .rain {
-    background-image: url("/cgkm-byui.github.io/weather/images/rain-small.jpg");
+    background-image: url("/weather/images/rain-small.jpg");
 }
 
 .snow {
-    background-image: url("/cgkm-byui.github.io/weather/images/snow-small.jpg");
+    background-image: url("/weather/images/snow-small.jpg");
 }
 
 nav {
     margin: 0 auto;
     max-width: 760px;
     background-color: #000;
-}
-
-nav {
     list-style: none;
     padding: 0;
 }
 
-nav li:first-child {
-    display: block;
-}
-
 nav li {
     display: none;
+}
+
+.mobileNav li{
+    display: flex;
 }
 
 nav a {
@@ -199,14 +196,25 @@ nav a:hover {
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 680px) {
+    nav {
+        display: grid;
+        grid-template-columns: 110px auto;  
+        align-items: center;
+        background-color:#FCC049;    
+    }
+    nav ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6em, 1fr)); 
+        margin: 0;
+        
+    }
     nav button {
         display: none;
     }
-
-    nav li {
-        display: block;
-        /* needed because of state in small view */
-        flex: 1 1 100%;
+    
+    nav li{
+        display:block;
     }
 
     nav li a {
@@ -214,28 +222,24 @@ nav a:hover {
         text-align: center;
     }
 
-    nav li:first-child {
-        display: none;
-    }
-
     .clear {
-        background-image: url("/cgkm-byui.github.io/weather/images/clear.jpg");
+        background-image: url("/weather/images/clear.jpg");
     }
 
     .clouds {
-        background-image: url("/cgkm-byui.github.io/weather/images/clouds.jpg");
+        background-image: url("/weather/images/clouds.jpg");
     }
 
     .fog {
-        background-image: url("/cgkm-byui.github.io/weather/images/fog.jpg");
+        background-image: url("/weather/images/fog.jpg");
     }
 
     .rain {
-        background-image: url("/cgkm-byui.github.io/weather/images/rain.jpg");
+        background-image: url("/weather/images/rain.jpg");
     }
 
     .snow {
-        background-image: url("/cgkm-byui.github.io/weather/images/snow.jpg");
+        background-image: url("/weather/images/snow.jpg");
     }
 }
 
