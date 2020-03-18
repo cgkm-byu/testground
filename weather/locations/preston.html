@@ -1,64 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This website was built to meet the requirements of CIT 230 - W1 assignment">
     <meta name="author" content="Christian G. K. Moreira">
-    <title>Preston Weather</title>
- <link rel="stylesheet" href="/css/stylesheet.css">
+    <title id="page-title"> | AnyWeather</title>
+    <link rel="icon" href="/cgkm-byui.github.io/favicon.ico">
+    <link rel="stylesheet" href="/cgkm-byui.github.io/weather/css/stylesheet.css">
 </head>
+
 <body>
-  <header id="pageHeader">
-    <span>Preston Town</span>
-    <img src="logo.jpg" alt="logo">
-    <p>Providing you with control over your daily plans</p>
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776; Menu</button>
-            <ul id="menu" class="" >
+    <header id="pageHeader">
+        <img src="/cgkm-byui.github.io/weather/images/logo.png" alt="logo">
+        <span>Preston Town</span>
+        <p>Providing you with control over your daily plans</p>
+        <nav class="clearfix" id="page-nav">
+            <button id="menuBtn">&#9776; Menu</button>
+            <ul id="menu" class="">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Favorites</a></li>
             </ul>
-    </nav>
-  </header>
-  
-  
-  
-  <main>
-   <h1>Sample Content</h1>
-   
-   <section id="location">
-    <h2>This is location data</h2>
-   </section>
-   
-   <section id="currentConditions">
-    <h2>This is current conditions data</h2>
-    <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
-   </section>
-   
-   <section id="temps">
-    <h2>This is temperature data</h2>
-    <div id="ti5" class="ball">5</div>
-    
-   </section>
-   
-   <section id="conditions">
-    <h2>This is conditions data</h2>
-    <div id="ci3" class="">3</div>
-   </section>
-   
-   <section id="precipitation">
-    <h2>This is precipitation data</h2>
-    <div id="pi3" class="">3</div>
-   </section>
-  </main>
-  
-  <footer id="pageFooter">
-   &copy; 2020, The Weather Site
-   <span id="lastModified"></span>
-  </footer>
-  <script src="/weather/js/functions.js"></script>
+        </nav>
+    </header>
+    <section id="status">Please be patient while I get your weather information.</section>
+    <main id="main-content" class="hide">
+        <h1 id="contentHeading"></h1>
+        <div>
+            <section id="location">
+                <h2 id="latLon"></h2>
+            </section>
+            <div id="currentWeather" class="clear">
+                <section id="currentConditions">
+                    <p id="hiTemp"></p>
+                    <h2 id="currentTemp"></h2>
+                    <p id="loTemp"></p>
+                    <p id="feel">Feels Like: <span id="feelTemp"></span></p>
+                    <p id="speed"></p>
+                    <p id="gusting"></p>
+                </section>
+
+                <section id="temps">
+                    <h2>This is temperature data</h2>
+                    <div class="component">
+                        <div class="inner">
+                            <div class='stats'>
+                                <ul>
+                                    <li class='o1'></li>
+                                    <li class='o2'></li>
+                                    <li class='o3'></li>
+                                    <li class='o4'></li>
+                                    <li class='o5'></li>
+                                    <li class='o6'></li>
+                                    <li class='o7'></li>
+                                    <li class='o8'></li>
+                                    <li class='o9'></li>
+                                    <li class='o10'></li>
+                                    <li class='o11'></li>
+                                    <li class='o12'></li>
+                                    <li class='midbox'>F&#176;</li>
+                                    <li class='i1'></li>
+                                    <li class='i2'></li>
+                                    <li class='i3'></li>
+                                    <li class='i4'></li>
+                                    <li class='i5'></li>
+                                    <li class='i6'></li>
+                                    <li class='i7'></li>
+                                    <li class='i8'></li>
+                                    <li class='i9'></li>
+                                    <li class='i10'></li>
+                                    <li class='i11'></li>
+                                    <li class='i12'></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ti5" class="ball">5</div>
+                </section>
+
+                <section id="condition">
+                    <h2>This is conditions data</h2>
+                    <div class="component">
+                        <div class="inner">
+                            <div class='stats'>
+                                <ul>
+                                    <li class='o1'></li>
+                                    <li class='o2'></li>
+                                    <li class='o3'></li>
+                                    <li class='o4'></li>
+                                    <li class='o5'></li>
+                                    <li class='o6'></li>
+                                    <li class='o7'></li>
+                                    <li class='o8'></li>
+                                    <li class='o9'></li>
+                                    <li class='o10'></li>
+                                    <li class='o11'></li>
+                                    <li class='o12'></li>
+                                    <li class='midbox'>F&#176;</li>
+                                    <li class='i1'></li>
+                                    <li class='i2'></li>
+                                    <li class='i3'></li>
+                                    <li class='i4'></li>
+                                    <li class='i5'></li>
+                                    <li class='i6'></li>
+                                    <li class='i7'></li>
+                                    <li class='i8'></li>
+                                    <li class='i9'></li>
+                                    <li class='i10'></li>
+                                    <li class='i11'></li>
+                                    <li class='i12'></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ci3" class="">3</div>
+                </section>
+
+                <section id="winds">
+                    <h2>This is wind data</h2>
+                    <div class="component">
+                        <div class="inner">
+                            <div class='stats'>
+                                <ul>
+                                    <li class='o1'></li>
+                                    <li class='o2'></li>
+                                    <li class='o3'></li>
+                                    <li class='o4'></li>
+                                    <li class='o5'></li>
+                                    <li class='o6'></li>
+                                    <li class='o7'></li>
+                                    <li class='o8'></li>
+                                    <li class='o9'></li>
+                                    <li class='o10'></li>
+                                    <li class='o11'></li>
+                                    <li class='o12'></li>
+                                    <li class='midbox'>F&#176;</li>
+                                    <li class='i1'></li>
+                                    <li class='i2'></li>
+                                    <li class='i3'></li>
+                                    <li class='i4'></li>
+                                    <li class='i5'></li>
+                                    <li class='i6'></li>
+                                    <li class='i7'></li>
+                                    <li class='i8'></li>
+                                    <li class='i9'></li>
+                                    <li class='i10'></li>
+                                    <li class='i11'></li>
+                                    <li class='i12'></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pi3" class="">3</div>
+                </section>
+            </div>
+    </main>
+
+    <footer id="pageFooter">
+        &copy; 2020, The Weather Site
+        <span id="lastModified"></span>
+    </footer>
+    <script src="/cgkm-byui.github.io/weather/js/functions.js"></script>
 </body>
+
 </html>

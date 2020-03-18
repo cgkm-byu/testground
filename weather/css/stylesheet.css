@@ -11,56 +11,234 @@
     color: transparent;
 }
 
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-    background-color: #000;
-}
-nav {
-	list-style: none;
-	padding: 0;
-}
-nav li:first-child {
-	display: block;
-}
-nav li {
-	display: none;
-}
-nav a {
-	display: block;
-	color: #fff;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-}
-nav a:hover {
-	color: #000;
-	background-color: #fff;
-	font-weight: 700;
+#currentWeather {
+    background-size: cover;
 }
 
+.clear {
+    background-image: url("/cgkm-byui.github.io/weather/images/clear-small.jpg");
+}
+
+.clouds {
+    background-image: url("/cgkm-byui.github.io/weather/images/clouds-small.jpg");
+}
+
+.fog {
+    background-image: url("/cgkm-byui.github.io/weather/images/fog-small.jpg");
+}
+
+.rain {
+    background-image: url("/cgkm-byui.github.io/weather/images/rain-small.jpg");
+}
+
+.snow {
+    background-image: url("/cgkm-byui.github.io/weather/images/snow-small.jpg");
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #000;
+}
+
+nav {
+    list-style: none;
+    padding: 0;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+/* Constrain condition images */
+#condition img {
+    max-width: 40%;
+}
+
+/* Clock-like elements */
+.component {
+    width: 200px;
+    height: 200px;
+    background-color: darkgray;
+    position: relative;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 90%;
+    align-self: center;
+}
+
+.stats {
+    position: absolute;
+}
+
+.o1 {
+    transform: translate(110px, -25px);
+}
+
+.o2 {
+    transform: translate(125px, -5px);
+}
+
+.o3 {
+    transform: translate(135px, 15px);
+}
+
+.o4 {
+    transform: translate(140px, 35px);
+}
+
+.o5 {
+    transform: translate(140px, 55px);
+}
+
+.o6 {
+    transform: translate(135px, 75px);
+}
+
+.o7 {
+    transform: translate(130px, 95px);
+}
+
+.o8 {
+    transform: translate(120px, 115px);
+}
+
+.o9 {
+    transform: translate(105px, 130px);
+}
+
+.o10 {
+    transform: translate(85px, 145px);
+}
+
+.o11 {
+    transform: translate(65px, 155px);
+}
+
+.o12 {
+    transform: translate(45px, 160px);
+}
+
+.midbox {
+    transform: translate(30px, 50px);
+}
+
+.i1 {
+    transform: translate(80px, -20px);
+}
+
+.i2 {
+    transform: translate(105px, 5px);
+}
+
+.i3 {
+    transform: translate(115px, 50px);
+}
+
+.i4 {
+    transform: translate(105px, 95px);
+}
+
+.i5 {
+    transform: translate(75px, 125px);
+}
+
+.i6 {
+    transform: translate(30px, 140px);
+}
+
+.i7 {
+    transform: translate(-15px, 125px);
+}
+
+.i8 {
+    transform: translate(-45px, 95px);
+}
+
+.i9 {
+    transform: translate(-55px, 50px);
+}
+
+.i10 {
+    transform: translate(-50px, 10px);
+}
+
+.i11 {
+    transform: translate(-20px, -25px);
+}
+
+.i12 {
+    transform: translate(30px, -35px);
+}
 
 
 /* Media Query for medium + screens */
 @media only screen and (min-width: 680px) {
-	nav button {
-		display: none;
-	}
-	nav li {
-		display: block; /* needed because of state in small view */
-		flex: 1 1 100%;
-	}
-	nav li a {
-		color: yellow;
-		text-align: center;
-	}
-	
-	nav li:first-child {
-		display: none;
+    nav button {
+        display: none;
+    }
+
+    nav li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+    }
+
+    nav li a {
+        color: yellow;
+        text-align: center;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    .clear {
+        background-image: url("/cgkm-byui.github.io/weather/images/clear.jpg");
+    }
+
+    .clouds {
+        background-image: url("/cgkm-byui.github.io/weather/images/clouds.jpg");
+    }
+
+    .fog {
+        background-image: url("/cgkm-byui.github.io/weather/images/fog.jpg");
+    }
+
+    .rain {
+        background-image: url("/cgkm-byui.github.io/weather/images/rain.jpg");
+    }
+
+    .snow {
+        background-image: url("/cgkm-byui.github.io/weather/images/snow.jpg");
     }
 }
-.clearfix:after{
-    content:"";
-    display: table;
-    clear: both;
+
+.hide {
+    display: none;
 }
