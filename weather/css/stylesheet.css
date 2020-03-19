@@ -4,17 +4,127 @@
 @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
 
 .ball {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
     border-radius: 100%;
     background-color: orangered;
     color: transparent;
+    position: absolute;
 }
-
+/* header */
+#top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 75%;
+}
+#top img{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    width: 20vw;
+}
+#top span{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: stretch;
+    align-self: end;
+    font-size: 7vw;
+}
+#top p{
+    grid-row: 2/3;
+    grid-column: 2/4;
+    justify-self: stretch;
+    align-self: Start;
+    font-size: 2vw;
+}
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 3%;
+   width: 100%;
+}
+#menuBtn{
+   position:fixed;
+   left:0;
+   bottom:0;
+   width: 100%;
+}
+#menu{
+   position: fixed;
+   left: 0;
+   bottom: 2%;
+   width: 100%;
+}
+/* main section*/
+main section{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #currentWeather {
     background-size: cover;
 }
-
+/* first card */
+#currentConditions{
+    border-radius: 2vw;
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 1vw;
+    width: 75vw;
+    height: 35vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: end center;
+}
+#hiTemp{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: red;
+    font-weight: bold;
+    font-size: 3vw;
+    place-self: center;
+}
+#currentTemp{
+    grid-row: 1/2;
+    grid-column: 2/5;
+    font-size: 5vw;
+    font-weight: bold;
+    place-self: end center;
+}
+#loTemp{
+    grid-row: 1/2;
+    grid-column: 5/6;
+    color: blue;
+    font-size: 3vw;
+    font-weight: bold;
+    place-self: center;
+}
+#feel{
+    grid-row: 2/3;
+    grid-column: 2/5;
+    font-size: 2vw;
+    font-weight: bold;
+    place-self: center;
+}
+#wSpeed{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    font-size: 2vw;
+    font-weight: bold;
+    place-self: center stretch;
+}
+#gust{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    font-size: 2vw;
+    font-weight: bold;
+    place-self: center stretch;
+}
+#currentConditions img{
+    max-width: 3vw;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    place-self: center;
+}
 .clear {
     background-image: url("/weather/images/clear-small.jpg");
 }
@@ -64,10 +174,12 @@ nav a:hover {
     background-color: #fff;
     font-weight: 700;
 }
-
-/* Constrain condition images */
-#condition img {
-    max-width: 40%;
+section h2{
+    display:none;
+}
+#location h2{
+    display: initial;
+    font-size: 2vw;
 }
 
 /* Clock-like elements */
@@ -79,6 +191,8 @@ nav a:hover {
     border-radius: 90%;
     display: flex;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .inner {
@@ -87,138 +201,86 @@ nav a:hover {
     background-color: #fff;
     border-radius: 90%;
     align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stats {
-    position: absolute;
+    position: static;
 }
-
-.o1 {
-    transform: translate(110px, -25px);
+.stats ul{
+    list-style: none;
 }
-
-.o2 {
-    transform: translate(125px, -5px);
+.component li{
+    position:absolute;
+    max-width: 56px;
 }
+/* outter ring data */
+.o1{transform: translate(110px,-25px);}
+.o2{transform: translate(125px,-5px);}
+.o3{transform: translate(135px,15px);}
+.o4{transform: translate(140px,35px);}
+.o5{transform: translate(140px,55px);}
+.o6{transform: translate(135px,75px);}
+.o7{transform: translate(130px,95px);}
+.o8{transform: translate(120px,115px);}
+.o9{transform: translate(105px,130px);}
+.o10{transform: translate(85px,145px);}
+.o11{transform: translate(65px,155px);}
+.o12{transform: translate(45px,160px);}
 
-.o3 {
-    transform: translate(135px, 15px);
+/* outter ring image data (necessary due to positioning issues with the image fetched from api)*/
+#condition .o1{transform: translate(45px,-85px);}
+#condition .o2{transform: translate(90px,-35px);}
+#condition .o3{transform: translate(100px,25px);}
+#condition .o4{transform: translate(90px,90px);}
+#condition .o5{transform: translate(45px,135px);}
+#condition .o6{transform: translate(-20px,150px);}
+#condition .o7{transform: translate(-75px,135px);}
+#condition .o8{transform: translate(-125px,90px);}
+#condition .o9{transform: translate(-150px,25px);}
+#condition .o10{transform: translate(-135px,-35px);}
+#condition .o11{transform: translate(-95px,-85px);}
+#condition .o12{transform: translate(-20px,-100px);}
+
+.midbox{
+	transform: translate(30px,50px);
 }
+/* inner ring image data */
+.i1{transform: translate(80px,-20px);}
+.i2{transform: translate(105px,5px);}
+.i3{transform: translate(115px,50px);}
+.i4{transform: translate(105px,95px);}
+.i5{transform: translate(75px,125px);}
+.i6{transform: translate(30px,140px);}
+.i7{transform: translate(-15px,125px);}
+.i8{transform: translate(-45px,95px);}
+.i9{transform: translate(-55px,50px);}
+.i10{transform: translate(-50px,10px);}
+.i11{transform: translate(-20px,-25px);}
+.i12{transform: translate(30px,-35px);}
 
-.o4 {
-    transform: translate(140px, 35px);
-}
-
-.o5 {
-    transform: translate(140px, 55px);
-}
-
-.o6 {
-    transform: translate(135px, 75px);
-}
-
-.o7 {
-    transform: translate(130px, 95px);
-}
-
-.o8 {
-    transform: translate(120px, 115px);
-}
-
-.o9 {
-    transform: translate(105px, 130px);
-}
-
-.o10 {
-    transform: translate(85px, 145px);
-}
-
-.o11 {
-    transform: translate(65px, 155px);
-}
-
-.o12 {
-    transform: translate(45px, 160px);
-}
-
-.midbox {
-    transform: translate(30px, 50px);
-}
-
-.i1 {
-    transform: translate(80px, -20px);
-}
-
-.i2 {
-    transform: translate(105px, 5px);
-}
-
-.i3 {
-    transform: translate(115px, 50px);
-}
-
-.i4 {
-    transform: translate(105px, 95px);
-}
-
-.i5 {
-    transform: translate(75px, 125px);
-}
-
-.i6 {
-    transform: translate(30px, 140px);
-}
-
-.i7 {
-    transform: translate(-15px, 125px);
-}
-
-.i8 {
-    transform: translate(-45px, 95px);
-}
-
-.i9 {
-    transform: translate(-55px, 50px);
-}
-
-.i10 {
-    transform: translate(-50px, 10px);
-}
-
-.i11 {
-    transform: translate(-20px, -25px);
-}
-
-.i12 {
-    transform: translate(30px, -35px);
+.component img {
+    width: 50%;
+    transform: translate(40px, 20px);
 }
 
 
 /* Media Query for medium + screens */
-@media only screen and (min-width: 480px) {
-    #top{
-        display: grid;
-        grid-template-columns: 1fr 1fr 75%;
-    }
-    #top img{
-        grid-row: 1/3;
-        grid-column: 1/2;
-    }
-    #top span{
-        grid-row: 1/2;
-        grid-column: 2/3;
-        justify-self: stretch;
-        align-self: end;
+@media only screen and (min-width: 680px) {
+    #top span{    
         font-size: 5vw;
     }
     #top p{
-        grid-row: 2/3;
-        grid-column: 2/4;
-        justify-self: stretch;
-        align-self: Start;
         font-size: 2vw;
     }
-    nav button {
+    #menu{
+        position: initial;
+    }
+    footer{
+        position: initial;
+    }
+    #menuBtn {
         display: none;
     }
     nav ul{
@@ -235,6 +297,53 @@ nav a:hover {
         display:flex;
         font-size: 2vw;
     }
+    section h2{
+        display:block;
+        text-align: center;
+        padding: 2vw;
+    }
+    #location h2{
+        display:initial;
+        font-size: 3vw;
+        padding:0px;
+    }
+    #currentTemp{
+        padding:0px;
+    }
+    /* middle */
+    #currentWeather{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    /* first card */
+    #currentConditions{
+        border-radius: 2vw;
+        border: 2px solid #fff;
+        padding: 1vw;
+        width: 50vw;
+        height: 25vw;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    /* second card */
+    #temps{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    /* third card */
+    #condition{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    /* fourth card */
+    #winds{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+
 
     .clear {
         background-image: url("/weather/images/clear.jpg");

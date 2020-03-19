@@ -7,7 +7,7 @@
     <meta name="description" content="This website was built to meet the requirements of CIT 230 - W1 assignment">
     <meta name="author" content="Christian G. K. Moreira">
     <title id="page-title"> | AnyWeather</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/weather/css/stylesheet.css">
 </head>
 
@@ -19,7 +19,6 @@
             <p>Providing you with control over your daily plans</p>
         </div>
         <nav class="clearfix" id="page-nav">
-            <button id="menuBtn">&#9776; Menu</button>
             <ul id="menu" class="">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Preston</a></li>
@@ -32,7 +31,7 @@
         <h1 id="contentHeading"></h1>
         <div>
             <section id="location">
-                <h2 id="latLon"></h2>
+                <h2>GPS: <span id="latLon"></span></h2>
             </section>
             <div id="currentWeather" class="clear">
                 <section id="currentConditions">
@@ -40,12 +39,13 @@
                     <h2 id="currentTemp"></h2>
                     <p id="loTemp"></p>
                     <p id="feel">Feels Like: <span id="feelTemp"></span></p>
-                    <p id="speed"></p>
-                    <p id="gusting"></p>
+                    <img src="/weather/images/wind.png">
+                    <p id="wSpeed"><span id="speed"></span>mph</p>
+                    <p id="gust"><span id="gusting"></span>mph</p>
                 </section>
 
                 <section id="temps">
-                    <h2>This is temperature data</h2>
+                    <h2>Temperature</h2>
                     <div class="component">
                         <div class="inner">
                             <div class='stats'>
@@ -63,18 +63,18 @@
                                     <li class='o11'></li>
                                     <li class='o12'></li>
                                     <li class='midbox'>F&#176;</li>
-                                    <li class='i1'></li>
-                                    <li class='i2'></li>
-                                    <li class='i3'></li>
-                                    <li class='i4'></li>
-                                    <li class='i5'></li>
-                                    <li class='i6'></li>
-                                    <li class='i7'></li>
-                                    <li class='i8'></li>
-                                    <li class='i9'></li>
-                                    <li class='i10'></li>
-                                    <li class='i11'></li>
-                                    <li class='i12'></li>
+                                    <li class='i1'>1</li>
+                                    <li class='i2'>2</li>
+                                    <li class='i3'>3</li>
+                                    <li class='i4'>4</li>
+                                    <li class='i5'>5</li>
+                                    <li class='i6'>6</li>
+                                    <li class='i7'>7</li>
+                                    <li class='i8'>8</li>
+                                    <li class='i9'>9</li>
+                                    <li class='i10'>10</li>
+                                    <li class='i11'>11</li>
+                                    <li class='i12'>12</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,8 +82,8 @@
                     <div id="ti5" class="ball">5</div>
                 </section>
 
-                <section id="condition">
-                    <h2>This is conditions data</h2>
+                <section id="winds">
+                    <h2>Wind</h2>
                     <div class="component">
                         <div class="inner">
                             <div class='stats'>
@@ -100,62 +100,62 @@
                                     <li class='o10'></li>
                                     <li class='o11'></li>
                                     <li class='o12'></li>
-                                    <li class='midbox'>F&#176;</li>
-                                    <li class='i1'></li>
-                                    <li class='i2'></li>
-                                    <li class='i3'></li>
-                                    <li class='i4'></li>
-                                    <li class='i5'></li>
-                                    <li class='i6'></li>
-                                    <li class='i7'></li>
-                                    <li class='i8'></li>
-                                    <li class='i9'></li>
-                                    <li class='i10'></li>
-                                    <li class='i11'></li>
-                                    <li class='i12'></li>
+                                    <li class='i1'>1</li>
+                                    <li class='i2'>2</li>
+                                    <li class='i3'>3</li>
+                                    <li class='i4'>4</li>
+                                    <li class='i5'>5</li>
+                                    <li class='i6'>6</li>
+                                    <li class='i7'>7</li>
+                                    <li class='i8'>8</li>
+                                    <li class='i9'>9</li>
+                                    <li class='i10'>10</li>
+                                    <li class='i11'>11</li>
+                                    <li class='i12'>12</li>
+                                </ul>
+                                <img src="/weather/images/wind.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pi3" class="">3</div>
+                </section>
+
+                <section id="condition">
+                    <h2>Conditions</h2>
+                    <div class="component">
+                        <div class="inner">
+                            <div class='stats'>
+                                <ul>
+                                    <li class='o1'></li>
+                                    <li class='o2'></li>
+                                    <li class='o3'></li>
+                                    <li class='o4'></li>
+                                    <li class='o5'></li>
+                                    <li class='o6'></li>
+                                    <li class='o7'></li>
+                                    <li class='o8'></li>
+                                    <li class='o9'></li>
+                                    <li class='o10'></li>
+                                    <li class='o11'></li>
+                                    <li class='o12'></li>
+                                    <li class='midbox'></li>
+                                    <li class='i1'>1</li>
+                                    <li class='i2'>2</li>
+                                    <li class='i3'>3</li>
+                                    <li class='i4'>4</li>
+                                    <li class='i5'>5</li>
+                                    <li class='i6'>6</li>
+                                    <li class='i7'>7</li>
+                                    <li class='i8'>8</li>
+                                    <li class='i9'>9</li>
+                                    <li class='i10'>10</li>
+                                    <li class='i11'>11</li>
+                                    <li class='i12'>12</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div id="ci3" class="">3</div>
-                </section>
-
-                <section id="winds">
-                    <h2>This is wind data</h2>
-                    <div class="component">
-                        <div class="inner">
-                            <div class='stats'>
-                                <ul>
-                                    <li class='o1'></li>
-                                    <li class='o2'></li>
-                                    <li class='o3'></li>
-                                    <li class='o4'></li>
-                                    <li class='o5'></li>
-                                    <li class='o6'></li>
-                                    <li class='o7'></li>
-                                    <li class='o8'></li>
-                                    <li class='o9'></li>
-                                    <li class='o10'></li>
-                                    <li class='o11'></li>
-                                    <li class='o12'></li>
-                                    <li class='midbox'>F&#176;</li>
-                                    <li class='i1'></li>
-                                    <li class='i2'></li>
-                                    <li class='i3'></li>
-                                    <li class='i4'></li>
-                                    <li class='i5'></li>
-                                    <li class='i6'></li>
-                                    <li class='i7'></li>
-                                    <li class='i8'></li>
-                                    <li class='i9'></li>
-                                    <li class='i10'></li>
-                                    <li class='i11'></li>
-                                    <li class='i12'></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="pi3" class="">3</div>
                 </section>
             </div>
     </main>
@@ -164,6 +164,7 @@
         &copy; 2020, The Weather Site
         <span id="lastModified"></span>
     </footer>
+    <button id="menuBtn">&#9776; Menu</button>
     <script src="/weather/js/functions.js"></script>
 </body>
 

@@ -161,6 +161,7 @@ function changeSummaryImage(weather) {
         case "FOG":
             document.querySelector('#currentWeather').className = "fog";
             break;
+        case "SLIGHT CHANCE LIGHT RAIN":
         case "CHANCE LIGHT RAIN":
         case "RAIN":
             document.querySelector('#currentWeather').className = "rain";
