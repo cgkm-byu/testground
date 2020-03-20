@@ -24,15 +24,15 @@
 /* General Rules that apply to all devices */
 html *{
     box-sizing: border-box;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 *::before,*::after{
     box-sizing: border-box;
 }
 body {
     display: flexbox;
-    background-color: white;
-    font-size: 18px;
+    background-color: var(--primary-color);
+    font-size: 4vw;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -51,7 +51,9 @@ p {
     color: var(--paragraph-color);
     padding: 1em;
 }
-  
+#pLogo{
+    width: 20vw;
+}
 .colors {
     width: 100%;
     min-width: 350px;
@@ -88,7 +90,7 @@ p.colored {
 /* Mobile Rules */
 #wrapper { /* wrapper is a div inside main*/
     width: 100%;
-    background-color: #FAFFFF;
+    background-color: var(--secondary-color);
     grid-column: 1/4;
     
 }
@@ -99,10 +101,12 @@ p.colored {
         width: 80%;
         margin: 0 auto;
         max-width: 1200px;
-        background-color: #8C9AAC;
-        font-size: 2vw;
+        background-color: var(--secondary-color);
         grid-column: 1/4;
         
+    }
+    body{
+        font-size: 2vw; 
     }
     #navlist{
         display: flex;
@@ -117,11 +121,13 @@ p.colored {
     #wrapper {
         width: 80%;
         margin: 0 auto;
-        background-color: #8C9AAC;
-        font-size: 1vw;
+        background-color: var(--secondary-color);
         grid-column: 1/4;
         
     }  
+    body{
+        font-size: 1vw; 
+    }
     #navlist{
         display: flex;
         list-style: none;
