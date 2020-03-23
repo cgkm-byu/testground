@@ -11,82 +11,19 @@ html *{
 }
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: #8C9AAC;
     font-size: 18px;
 }
-main{
-    grid-column: 1/4;
-}
+
 /* Mobile Rules */
 #wrapper { /* wrapper is a div inside main*/
     width: 100%;
     background-color: #FAFFFF;
-    grid-column: 1/4;
     
 }
 .ss{
     width: 50%;
-}
-
-/* Larger Screen Rules */
-@media screen and (min-width:680px){
-    #wrapper {
-        width: 80%;
-        margin: 0 auto;
-        max-width: 1200px;
-        background-color: #8C9AAC;
-        font-size: 2vw;
-        grid-column: 1/4;
-        
-    }
-    #assignment-list{
-        grid-row: 2/3;
-        grid-column: 1/4;
-        background-color: #FAFFFF;
-        grid-gap: 1rem;
-        padding: 1rem;
-    }
-    .ss{
-        width: 100%;
-    }
-    #navlist{
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        justify-content: space-evenly;
-    }
-}
-/* Extra-Large Screen Rules */
-@media screen and (min-width:1300px){
-    #wrapper {
-        width: 80%;
-        margin: 0 auto;
-        background-color: #8C9AAC;
-        font-size: 1vw;
-        grid-column: 1/4;
-        
-    }
-    #assignment-list{
-        grid-row: 2/3;
-        grid-column: 1/4;
-        background-color: #FAFFFF;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-        grid-gap: 1rem;
-        padding: 1rem;
-    }
-    .ss{
-        width: 100%;
-    }
-    #navlist{
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        justify-content: space-evenly;
-    }
 }
 #top {
     text-align: center;
@@ -127,4 +64,73 @@ footer a{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Ibarra Real Nova', serif;
     text-align: initial;
+}
+/* Larger Screen Rules */
+@media screen and (min-width:680px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #8C9AAC;
+        font-size: 2vw;
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+    }
+    #assignment-list{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        background-color: #FAFFFF;
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+    #photo{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .ss{
+        width: 100%;
+    }
+    #navlist{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+/* Extra-Large Screen Rules */
+@media screen and (min-width:1300px){
+    #wrapper {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #8C9AAC;
+        font-size: 1vw;
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+        
+    }
+    #assignment-list{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        background-color: #FAFFFF;
+
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+    #photo{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    .ss{
+        width: 100%;
+    }
+    #navlist{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
 }
