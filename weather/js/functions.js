@@ -115,6 +115,8 @@ menuButton.addEventListener('click',function(event){
 function mobileMenu(event) {
     const navList = document.querySelector('#menu');
     navList.classList.toggle("mobileNav");
+    const foot = document.querySelector('#pageFooter');
+    foot.classList.toggle("foot");
 }
 
 function buildWC(speed, temp) {
