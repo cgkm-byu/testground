@@ -216,18 +216,18 @@ section h2{
     max-width: 56px;
 }
 /* outter ring data */
-.o1{transform: translate(110px,-25px);}
+.o1{transform: translate(90px,-40px);}
 .o2{transform: translate(125px,-5px);}
-.o3{transform: translate(135px,15px);}
-.o4{transform: translate(140px,35px);}
-.o5{transform: translate(140px,55px);}
-.o6{transform: translate(135px,75px);}
-.o7{transform: translate(130px,95px);}
-.o8{transform: translate(120px,115px);}
-.o9{transform: translate(105px,130px);}
-.o10{transform: translate(85px,145px);}
-.o11{transform: translate(65px,155px);}
-.o12{transform: translate(45px,160px);}
+.o3{transform: translate(140px,50px);}
+.o4{transform: translate(125px,110px);}
+.o5{transform: translate(85px,145px);}
+.o6{transform: translate(25px,160px);}
+.o7{transform: translate(-35px,150px);}
+.o8{transform: translate(-75px,115px);}
+.o9{transform: translate(-85px,50px);}
+.o10{transform: translate(-75px,-10px);}
+.o11{transform: translate(-35px,-45px);}
+.o12{transform: translate(25px,-65px);}
 
 /* outter ring image data (necessary due to positioning issues with the image fetched from api)*/
 #condition .o1{transform: translate(45px,-85px);}
@@ -258,7 +258,7 @@ section h2{
 .i9{transform: translate(-55px,50px);}
 .i10{transform: translate(-50px,10px);}
 .i11{transform: translate(-20px,-25px);}
-.i12{transform: translate(30px,-35px);}
+.i12{transform: translate(25px,-35px);}
 
 .component img {
     width: 50%;
