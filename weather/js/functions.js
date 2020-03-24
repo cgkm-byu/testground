@@ -18,7 +18,8 @@ var sessStore = window.sessionStorage;
 document.addEventListener("DOMContentLoaded", function() {
     // Display page last modified date
     lastModified();
-
+    // Highlights the current page on the nav
+    currentPage();
     // Add event listener for mobile menu click
     menuButton.addEventListener("click", mobileMenu);
 
@@ -364,4 +365,16 @@ function buildPage() {
     // Change the status of the containers
     contentContainer.setAttribute('class', ''); // removes the hide class from main
     statusContainer.setAttribute('class', 'hide'); // hides the status container
+}
+function currentPage(){
+    let current = $("#city").getAttribute("data-city");
+    switch(current.toUpperCase()){
+        case "PRESTON":
+            $("#preston").className = "active";
+            break;
+        case "SODA SPRINGS":
+            $("#soda").className = "active";
+            break;
+    }
+       
 }

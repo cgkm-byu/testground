@@ -2,7 +2,10 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 @import url('https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap');
-
+.active { 
+    background-color: darkgray;
+    color: #353535;
+}
 .ball {
     height: 25px;
     width: 25px;
