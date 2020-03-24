@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
  *  Fetch Weather Data
  ************************************* */
 function fetchWeatherData(weatherURL) {
-    let cityName = 'Preston'; // The data we want from the weather.json file
+    let cityName = $("#city").getAttribute("data-city"); // The data we want from the weather.json file
+    console.log(cityName);
     fetch(weatherURL)
         .then(function(response) {
             if (response.ok) {
@@ -66,11 +67,11 @@ function fetchWeatherData(weatherURL) {
 
             // Create a JSON object containing the full name, latitude and longitude
             // and store it into local storage.
-            const prestonData = JSON.stringify({
+            const cityData = JSON.stringify({
                 fullName,
                 latLong
             });
-            locStore.setItem("Preston,ID", prestonData);
+            locStore.setItem(cityName + ", ID", cityData);
 
             // **********  Get the current conditions information  **********
             // As the data is extracted from the JSON, store it into session storage
@@ -149,13 +150,20 @@ function timeIndicator(hour) {
 }
 
 // Change background function
+// used fall-through because it is easier to modify
 function changeSummaryImage(weather) {
     weather = weather.toUpperCase();
     switch (weather) {
+        case "SUNNY":
+        case "MOSTLY SUNNY":
+        case "PARTLY SUNNY":    
         case "CLEAR":
             document.querySelector('#currentWeather').className = "clear";
             break;
+        case "MOSTLY CLOUDY":
+        case "PARTLY CLOUDY":
         case "CLOUDS":
+        case "OVERCAST":
             document.querySelector('#currentWeather').className = "clouds";
             break;
         case "FOG":
@@ -164,9 +172,14 @@ function changeSummaryImage(weather) {
         case "SLIGHT CHANCE LIGHT RAIN":
         case "CHANCE LIGHT RAIN":
         case "RAIN":
+        case "SHOWERS":
+        case "THUNDERSTORMS":
             document.querySelector('#currentWeather').className = "rain";
             break;
         case "SNOW":
+        case "SNOW SHOWERS":
+        case "FREEZING RAIN":
+        case "SLEET":
             document.querySelector('#currentWeather').className = "snow";
             break;
         default:
